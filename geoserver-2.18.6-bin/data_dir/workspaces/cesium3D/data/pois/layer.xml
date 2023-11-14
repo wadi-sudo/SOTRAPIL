@@ -1,0 +1,16 @@
+<layer>
+  <name>pois</name>
+  <id>LayerInfoImpl-18c09c34:183e9f91451:-7f89</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-18c09c34:183e9f91451:-7f8a</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-18 10:26:22.331 UTC</dateCreated>
+</layer>

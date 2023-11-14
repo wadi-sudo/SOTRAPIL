@@ -1,0 +1,16 @@
+<layer>
+  <name>GrandTunis_Bizerte</name>
+  <id>LayerInfoImpl--5fa70f14:18529846d00:-7ffd</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--5fa70f14:18529846d00:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-12-19 10:40:06.997 UTC</dateCreated>
+</layer>

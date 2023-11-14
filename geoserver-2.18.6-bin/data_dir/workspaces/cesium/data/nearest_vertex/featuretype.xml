@@ -1,0 +1,74 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-18c09c34:183e9f91451:-7ff7</id>
+  <name>nearest_vertex</name>
+  <nativeName>nearest_vertex</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-65493c62:183d0395126:-7ffe</id>
+  </namespace>
+  <title>nearest_vertex</title>
+  <keywords>
+    <string>nearest_vertex</string>
+    <string>features</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>9.215345220495857</minx>
+    <maxx>11.215345220495857</maxx>
+    <miny>35.830647967394285</miny>
+    <maxy>37.830647967394285</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>9.215345220495857</minx>
+    <maxx>11.215345220495857</maxx>
+    <miny>35.830647967394285</miny>
+    <maxy>37.830647967394285</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>nearest_vertex</name>
+        <sql>SELECT&#xd;
+  v.id,&#xd;
+  v.the_geom,&#xd;
+  string_agg(distinct(e.name),&apos;,&apos;) AS name&#xd;
+FROM&#xd;
+  routes_noded_vertices_pgr AS v,&#xd;
+  routes_noded AS e&#xd;
+WHERE&#xd;
+  v.id = (SELECT&#xd;
+            id&#xd;
+          FROM routes_noded_vertices_pgr&#xd;
+          ORDER BY the_geom &lt;-&gt; ST_SetSRID(ST_MakePoint(%x%, %y%), 4326) LIMIT 1)&#xd;
+  AND (e.source = v.id OR e.target = v.id)&#xd;
+GROUP BY v.id, v.the_geom
+</sql>
+        <escapeSql>false</escapeSql>
+        <parameter>
+          <name>x</name>
+          <defaultValue>1</defaultValue>
+          <regexpValidator>^[\d\.\+-eE]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>y</name>
+          <defaultValue>2</defaultValue>
+          <regexpValidator>^[\d\.\+-eE]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-65493c62:183d0395126:-7ffd</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

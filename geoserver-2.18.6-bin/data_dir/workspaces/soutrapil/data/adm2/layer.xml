@@ -1,0 +1,17 @@
+<layer>
+  <name>adm2</name>
+  <id>LayerInfoImpl--442b45ec:184d1e13f7d:-7fed</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--67867acb:1851019b0dd:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--442b45ec:184d1e13f7d:-7fee</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-12-02 08:50:00.216 UTC</dateCreated>
+  <dateModified>2022-12-14 12:32:02.729 UTC</dateModified>
+</layer>

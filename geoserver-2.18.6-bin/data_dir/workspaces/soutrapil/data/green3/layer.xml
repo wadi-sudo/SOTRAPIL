@@ -1,0 +1,17 @@
+<layer>
+  <name>green3</name>
+  <id>LayerInfoImpl-6ef77dff:18557bc0b20:-7ffc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6ef77dff:18557bc0b20:-7ffb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6ef77dff:18557bc0b20:-7ffd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-12-28 08:00:17.51 UTC</dateCreated>
+  <dateModified>2022-12-28 08:04:55.594 UTC</dateModified>
+</layer>

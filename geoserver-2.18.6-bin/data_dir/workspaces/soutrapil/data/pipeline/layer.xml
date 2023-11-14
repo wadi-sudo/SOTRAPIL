@@ -1,0 +1,16 @@
+<layer>
+  <name>pipeline</name>
+  <id>LayerInfoImpl--442b45ec:184d1e13f7d:-7fe4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--442b45ec:184d1e13f7d:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--442b45ec:184d1e13f7d:-7fe5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-12-02 08:50:55.792 UTC</dateCreated>
+</layer>

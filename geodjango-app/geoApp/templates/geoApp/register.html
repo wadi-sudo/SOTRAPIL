@@ -1,0 +1,38 @@
+{% extends 'geoApp/main.html' %}{% load crispy_forms_tags %} {% block content %}
+{% load static %}
+<div class="header-bar">
+  <div style="display: flex; flex-wrap: wrap; width: 100%">
+    <div style="display: inline-flex">
+      <img src="{% static 'geoApp/CNCT.png'%}" width="75px" height="75px" />
+      <img src="{% static 'geoApp/zze.png'%}" width="95px" height="75px" />
+    </div>
+
+    <h2 style="color: #424d96; min-width: 140px">Création d'un compte</h2>
+  </div>
+</div>
+
+<div class="card-body">
+  <form method="POST">
+    {% csrf_token %}
+    <!-- {{ register_form|crispy }}  -->
+    {{ form.as_p }}
+
+    <!-- <label>{{form.username.label}}</label>
+    {{form.username}}
+
+    <label>{{form.password1.label}}</label>
+    {{form.password1}}
+
+    <label>{{form.password2.label}}</label>
+    {{form.password2}} -->
+    <input
+      style="margin-top: 10px"
+      class="button"
+      type="submit"
+      value="Enregistrer"
+    />
+  </form>
+  <p>avez vous un compte? <a href="{% url 'login' %}">Connexion</a></p>
+</div>
+
+{% endblock content %}

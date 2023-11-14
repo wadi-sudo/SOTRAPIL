@@ -1,0 +1,26 @@
+* { 
+  fill: #a9dab6; 
+  font-family: "DejaVu Sans";
+  halo-color: white;
+  halo-radius: 0.3;
+  font-weight: normal;
+  font-fill: #8ba464;
+  font-style: normal; 
+  label-anchor: 0.5 0;
+  label-offset: 0 5;
+}
+
+[@scale > 2000001] {
+  stroke-opacity: 0;
+}
+
+
+[@scale < 2000001] [@scale > 200001] {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
+[@scale < 200000] [@scale > 1] {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}

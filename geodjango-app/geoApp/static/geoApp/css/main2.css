@@ -1,0 +1,183 @@
+
+#main-navbar{
+  color: white;
+  min-height: 14vh;
+  font-size: 15px;
+}
+#authstyle{
+  margin-left: 17%;
+  border-radius: 50%;
+}
+
+
+#header-links{
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#header-links:hover{
+  color: #007fe3;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: #007fe3;
+  /*box-shadow: 0 0 10px #ff8248, 0 0 4px #ff8248,0 0 80px #ff8248;*/
+  transition-delay: 0.1s;
+  text-decoration: none;
+  border-radius: 9px;
+}
+#header-links:active{
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Remy function
+@function remy($value) {
+@return ($value / 16px) * 1rem;
+}
+
+a,
+[type="submit"] {transition: all .25s ease-in;}
+.signup__container {
+position: absolute;
+top: 50%;
+right: 0;
+left: 0;
+margin-right: auto;
+margin-left: auto;
+transform: translateY(-50%);
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+width: remy(800px);
+height: remy(480px);
+border-radius: remy(3px);
+box-shadow: 0px remy(3px) remy(7px) rgba(0,0,0,.25);
+}
+.signup__overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,.76);
+}
+.container__child {
+width: 50%;
+height: 100%;
+color: #fff;
+}
+.signup__thumbnail {
+position: relative;
+padding: 2rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+background: url(http://ultraimg.com/images/spectre-login.jpg);
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+}
+.thumbnail__logo,
+.thumbnail__content,
+.thumbnail__links {
+position: relative;
+z-index: 2;
+}
+.thumbnail__logo {align-self: flex-start;}
+.logo__shape {fill: #fff;}
+.logo__text {
+display: inline-block;
+font-size: .8rem;
+font-weight: 700;
+vertical-align: bottom;
+}
+.thumbnail__content {align-self: center;}
+
+.heading--primary {font-size: 1.999rem;}
+.heading--secondary {font-size: 1.414rem;}
+.thumbnail__links {
+align-self: flex-end;
+width: 100%;
+}
+.thumbnail__links a {
+font-size: 1rem;
+color: #fff;
+&:focus,
+&:hover {color: rgba(255,255,255,.5);}
+}
+.signup__form {
+padding: 2.5rem;
+background: #fafafa;
+}
+
+.form-control {
+background-color: transparent;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+border-radius: 0;
+&:focus {border-color: #111;}
+}
+
+.btn--form {
+padding: .5rem 2.5rem;
+font-size: .95rem;
+font-weight: 600;
+text-transform: uppercase;
+color: #fff;
+background: #111;
+border-radius: remy(35px);
+&:focus,
+&:hover {background: lighten(#111, 13%);}
+}
+.signup__link {
+font-size: .8rem;
+font-weight: 600;
+text-decoration: underline;
+color: #999;
+&:focus,
+&:hover {color: darken(#999, 13%);}
+}
+#signup-button{
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: #fd5e19;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#signup-button:hover{
+  color: #021f3b;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: #ffcab1;
+  box-shadow: 0 0 10px #ff8248, 0 0 4px #ff8248,0 0 80px #ff8248;
+  transition-delay: 0.1s;
+  text-decoration: none;
+  border-radius: 9px;
+}

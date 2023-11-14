@@ -1,0 +1,16 @@
+<layer>
+  <name>routes_noded</name>
+  <id>LayerInfoImpl-18c09c34:183e9f91451:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-18c09c34:183e9f91451:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-18 09:25:09.944 UTC</dateCreated>
+</layer>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>SIG Sotrapil</title>
+        <link
+          rel="icon"
+          href="{% static 'geoApp/logo2.png' %}"
+          sizes="16x16"
+          type="image/png"
+        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="{% static 'geoApp/libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js' %}"></script>
+        <link
+        rel="stylesheet"
+        href="{% static 'geoApp/src/css/font-awesome.min.css' %}"
+      />
+      <link
+      href="{% static 'geoApp/libs/bootstrap-5.1.3-dist/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="{% static 'geoApp/style.css' %}" /> -->
+      <style>
+        html,
+        body {
+            height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #d0d6da;
+        }
+    
+        b {
+          font-weight: 600;
+        }
+        .mynavtext:hover {
+  color: #952453;
+}
+.mynavtext {
+  box-shadow: #e5c3c3;
+  border-radius: 5px;
+  color: #3a4486;
+  transition: 0.3s;
+  width: 50%;
+  height: 50%;
+}
+        #header-bar {
+  display: flex;
+  justify-content: space-between;
+  /* color: #3a4486; */
+  /* height: 10vh; */
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  /* margin: 0 1px; */
+  color: #952453;
+
+  /* background: linear-gradient(180deg, #c7c7c7 0%, #dddddd 43%, #eaeaea 100%); */
+  /* background: linear-gradient(180deg, #a6bbc5 0%, #bbcad1 43%, #cfd8dc 100%); */
+  background: rgba(255, 255, 255, 0.15);
+  /* box-shadow: 0 3px 14px rgb(0 0 0 / 40%); */
+  /* background-color: rgba(198, 231, 253, 0.907) ; */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#header-bar a {
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 50px;
+}
+    .layer-switcher{
+        margin-top: 50px !important;
+    }
+    .ol-wfst--changes-control{
+        margin-top: 100px;
+    }
+        .map {
+          height: 100%;
+          margin-left: 2px;
+        }
+        button.ol-zoom-in{
+            margin-top: 100px !important;
+        }
+      
+        .ol-control button {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #sidebar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 270px;
+          padding: 10px;
+          box-sizing: border-box;
+          background-color: #fff;
+          box-shadow: 0 5px 5px black;
+          border-right: 1px solid grey;
+        }
+      </style>
+    </head>
+
+<body>
+    
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'geoApp/WFST/ol-wfst/lib/style/css/ol-gisify.css' %}"
+  />
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" />
+    <script src="https://unpkg.com/ol-wfst@4.2.0"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ol-wfst@4.2.0/dist/css/ol-wfst.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/ol-wfst@4.2.0/dist/css/ol-wfst.bootstrap5.min.css" />
+<script src="https://unpkg.com/ol-layerswitcher@4.1.1"></script>
+<link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.1/dist/ol-layerswitcher.css" /> -->
+
+<link rel="stylesheet" type="text/css" href="{% static 'geoApp/ol/ol.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'geoApp/ol/ol-wfst.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'geoApp/ol/ol-layerswitcher.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'geoApp/ol/ol-wfst.bootstrap5.min.css' %}" />
+
+<script src="{% static 'geoApp/ol/ol.js' %}"> </script>
+<script src="{% static 'geoApp/ol/ol-wfst.js' %}"> </script>
+<script src="{% static 'geoApp/ol/ol-layerswitcher.js' %}"> </script>
+
+
+
+
+<div
+class="navbar navbar-b navbar-expand-md fixed-top navbar-reduce"
+id="header-bar" 
+>
+<button
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNavAltMarkup"
+  aria-controls="navbarNavAltMarkup"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fa fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div style="display: flex; flex-wrap: wrap; width: 90%">
+    <div style="display: inline-flex; width: 45%">
+      &nbsp<img
+        class="cnct"
+        src="{% static 'geoApp/CNCT.png'%}"
+        width="65px"
+        height="65px"
+      />
+      &nbsp<img
+        class="sotrapil"
+        src="{% static 'geoApp/zze.png'%}"
+        width="85px"
+        height="65px"
+      />
+    </div>
+
+    <div
+      style="
+        text-align: center;
+        color: #3a4486;
+        width: 55%;
+        min-width: 170px;
+      "
+    >
+      <h2 class="titre">
+        <a style="color: #3a4486" href="{% url 'edit' %}"
+          >SIG SOTRAPIL</a
+        >
+      </h2>
+    </div>
+  </div>
+</div>
+{% if request.user.is_authenticated %}
+<div
+  style="
+    display: flex;
+    margin-top: 10px;
+    width: 30%;
+    justify-content: flex-end;
+  "
+>
+
+  <a href="{% url 'index' %}">
+    <h3 class="mynavtext" >
+      <i class="fa fa-home"></i></h3></a
+  >&nbsp &nbsp 
+  <a href="{% url 'admin' %}"
+    ><h3 class="mynavtext"><i class="fa fa-user"></i></h3>
+  </a>
+  &nbsp &nbsp
+  <a href="{% url 'logout' %}"
+    ><h3 class="mynavtext"><i class="fa fa-sign-out"></i></h3
+  ></a>
+</div>
+{% else %} <a href="{% url 'login' %}">Connexion</a> {% endif %}
+</div>
+    <div id="map" class="map"></div>
+
+
+
+  <script>
+(function () {
+
+    var markerStyle = new ol.style.Style({
+  image: new ol.style.Icon({
+    //anchor: [0.5, 1],
+    scale:0.08,
+    src:  "{% static 'geoApp/placeholde/hotelh.png' %}" // You can use a custom marker icon
+  })
+});
+    var baseLayerGroup = new ol.layer.Group({
+    title: 'fond sat',
+    layers: [new ol.layer.Tile({
+            source: new ol.source.XYZ({
+                url: '/static/Tuilage2/{z}/{x}/{y}.png',
+    
+            }),
+            visible: false, 
+        })
+    ], 
+});
+
+var baseLayerGroup2 = new ol.layer.Group({
+    title: 'fond carto',
+    layers: [new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://127.0.0.1:8081/geoserver/soutrapil/wms', 
+                params: {'LAYERS': 'adm1,green3,adm2,water,route_s,route_p', 'TILED': true},
+                serverType: 'geoserver',
+                
+            }),
+          
+        }),
+    ],
+     // Add your base layers here
+});
+
+var map = new ol.Map({
+    layers: [
+
+        baseLayerGroup,
+        baseLayerGroup2
+    ],
+    target: 'map',
+    view: new ol.View({
+        // projection: 'EPSG:4326',
+        // center: [-57.11345, -36.28140], // EPSG:4326
+        zoom: 10,
+        projection: 'EPSG:4326',
+        center: [9.73938,36.96874],
+        maxZoom: 18,
+        opacity: 0.8,
+        minZoom: 9,
+        zoomControl: true,
+        maxExtent: ol.proj.transformExtent(
+          [7.756347656250001, 36.01800375871416, 12.076721191406252, 37.82931081282506],
+          'EPSG:4326',
+          'EPSG:4326'
+      ),
+    }),
+    controls: ol.control.defaults.defaults({
+        attribution: false, // Adjust as needed
+    }).extend([
+    new LayerSwitcher(),
+    ]),
+});
+
+// var password = geoserver;
+// var username = 'admin';
+
+var geoserver = new Wfst.Geoserver({
+    url: 'http://localhost:8081/geoserver/soutrapil/ows',
+    advanced: {
+        getCapabilitiesVersion: '2.0.0',
+        getFeatureVersion: '1.0.0',
+        describeFeatureTypeVersion: '1.1.0',
+        lockFeatureVersion: '1.1.0',
+        wfsTransactionVersion: '1.1.0',
+        projection: 'EPSG:4326'
+    },
+    // Maybe you wanna add this on a proxy, at the backend
+   // headers: { 'Authorization': 'Basic ' + btoa(username + ":" + password) }
+});
+
+var location = new Wfst.WfsLayer({
+    geoserver,
+    name: 'location',
+    label: 'location',
+   // minZoom: 12,
+    zIndex: 100,
+    style: markerStyle,
+    // style: new ol.style.Style({
+    //     image: new ol.style.Circle({
+    //         radius: 5,
+    //         fill: new ol.style.Fill({
+    //             color: '#000000'
+    //         }),
+    //         stroke: new ol.style.Stroke({
+    //             color: [255, 0, 0],
+    //             width: 2
+    //         })
+    //     })
+    // }),
+    geoserverVendor: {
+        maxFeatures: 500,
+        // cql_filter: 'registroid = 1111'
+    },
+ 
+    beforeTransactFeature: function (feature, transactionType) {
+        if (transactionType === 'insert') {
+            // Add a custom value o perform an action before insert features
+            feature.set('registroid', '1111', true);
+        }
+        return feature;
+    }
+});
+
+var pipeline = new Wfst.WmsLayer({
+    geoserver,
+    name: 'pipeline',
+    label: 'pipeline',
+    //minZoom: 12,
+    zIndex: 100,
+    style: new ol.style.Style({
+        fill: new ol.style.Fill({
+                color: 'grey'
+            }),
+    stroke: new ol.style.Stroke({
+      color: 'grey',
+      width: 2
+    })
+  }),
+    strategy: ol.loadingstrategy.bbox,
+    geoserverVendor: {
+        maxFeatures: 500
+    },
+    beforeTransactFeature: function (feature, transactionType) {
+        if (transactionType === 'insert') {
+            // Add a custom value o perform an action before insert features
+            feature.set('customProperty', 'customValue', true);
+        }
+        return feature;
+    }
+})
+var site = new Wfst.WmsLayer({
+    geoserver,
+    name: 'site',
+    label: 'site',
+    //minZoom: 12,
+    zIndex: 110,
+    style:new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: [255, 0, 0]
+    }),
+    stroke: new ol.style.Stroke({
+      color: 'red',
+      width: 2
+    })
+  }),
+    strategy: ol.loadingstrategy.bbox,
+    geoserverVendor: {
+        maxFeatures: 500
+    },
+    beforeTransactFeature: function (feature, transactionType) {
+        if (transactionType === 'insert') {
+            // Add a custom value o perform an action before insert features
+            feature.set('customProperty', 'customValue', true);
+        }
+        return feature;
+    }
+})
+
+var wfst = new Wfst({
+    layers: [
+        location,
+        pipeline,
+        site
+    ],
+    language: 'en',
+    showUpload: true
+});
+
+// Events
+geoserver.on(['change:capabilities'], function (evt) {
+    console.log(geoserver.getCapabilities());
+});
+
+wfst.on(['describeFeatureType'], function (evt) {
+    console.log(evt.type, evt.layer, evt.data);
+});
+
+wfst.on(['modifystart', 'modifyend', 'drawstart', 'drawend', 'load'], function (evt) {
+    console.log(evt.type, evt);
+});
+
+
+
+map.addControl(wfst);
+
+
+
+
+
+
+
+
+})();
+
+  </script>
+</body>
+    </html>

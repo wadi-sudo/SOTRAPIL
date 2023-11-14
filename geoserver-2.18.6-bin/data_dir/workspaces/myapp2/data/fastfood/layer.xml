@@ -1,0 +1,16 @@
+<layer>
+  <name>fastfood</name>
+  <id>LayerInfoImpl-489b6ee9:1831284fc9e:-7e23</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-489b6ee9:1831284fc9e:-7e36</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-489b6ee9:1831284fc9e:-7e24</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-09 09:09:35.399 UTC</dateCreated>
+</layer>

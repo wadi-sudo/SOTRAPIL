@@ -1,0 +1,16 @@
+<layer>
+  <name>z_verte</name>
+  <id>LayerInfoImpl-65493c62:183d0395126:-7fdf</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-65493c62:183d0395126:-7ff5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-65493c62:183d0395126:-7fe0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-13 07:44:22.749 UTC</dateCreated>
+</layer>

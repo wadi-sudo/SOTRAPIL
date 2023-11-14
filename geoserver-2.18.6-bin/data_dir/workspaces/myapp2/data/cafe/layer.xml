@@ -1,0 +1,16 @@
+<layer>
+  <name>cafe</name>
+  <id>LayerInfoImpl-489b6ee9:1831284fc9e:-7e2a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-489b6ee9:1831284fc9e:-7e37</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-489b6ee9:1831284fc9e:-7e2b</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-09 09:07:25.987 UTC</dateCreated>
+</layer>

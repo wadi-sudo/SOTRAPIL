@@ -1,0 +1,16 @@
+<layer>
+  <name>road</name>
+  <id>LayerInfoImpl--1482df41:18312538279:-7fc8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--1482df41:18312538279:-7fc9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-06 10:47:55.759 UTC</dateCreated>
+</layer>

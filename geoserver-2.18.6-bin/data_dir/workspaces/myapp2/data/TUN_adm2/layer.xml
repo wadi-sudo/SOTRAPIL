@@ -1,0 +1,16 @@
+<layer>
+  <name>TUN_adm2</name>
+  <id>LayerInfoImpl--1482df41:18312538279:-7fcf</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fea</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--1482df41:18312538279:-7fd0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-06 10:47:22.614 UTC</dateCreated>
+</layer>

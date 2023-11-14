@@ -1,0 +1,17 @@
+<layer>
+  <name>route_p</name>
+  <id>LayerInfoImpl--442b45ec:184d1e13f7d:-7fde</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--67867acb:1851019b0dd:-7ff5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--442b45ec:184d1e13f7d:-7fdf</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-12-02 08:51:32.351 UTC</dateCreated>
+  <dateModified>2022-12-14 13:01:22.899 UTC</dateModified>
+</layer>

@@ -1,0 +1,16 @@
+<layer>
+  <name>nearest_vertex</name>
+  <id>LayerInfoImpl-18c09c34:183e9f91451:-7ff6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-18c09c34:183e9f91451:-7ff7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-18 09:29:36.532 UTC</dateCreated>
+</layer>

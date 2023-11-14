@@ -1,0 +1,22 @@
+{% extends 'geoApp/main.html' %} {% block content %} {% load static %}
+<div class="header-bar">
+  <div style="display: flex; flex-wrap: wrap; width: 100%">
+    <div style="display: inline-flex">
+      <img src="{% static 'geoApp/CNCT.png'%}" width="75px" height="75px" />
+      <img src="{% static 'geoApp/zze.png'%}" width="95px" height="75px" />
+    </div>
+
+    <h2 style="color: #424d96; min-width: 140px">Connexion</h2>
+  </div>
+</div>
+
+<div class="card-body">
+  <form method="POST">
+    {% csrf_token %} {{form.as_p}}
+    <input class="button" type="submit" value="Connexion" />
+  </form>
+
+  <p>Vous n'avez pas un compte? <a href="{% url 'register' %}">Création</a></p>
+</div>
+
+{% endblock content %}

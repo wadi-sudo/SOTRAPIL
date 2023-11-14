@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<tilemap tilemapservice="http://www.osgeo.org/services/tilemapservice.xml" version="1.0.0">
+<title>GTB</title>
+<abstract></abstract>
+<srs>EPSG:900913</srs>
+<vsrs></vsrs>
+<boundingbox maxx="1252344.2714243" maxy="4696291.0178412" minx="939258.2035682" miny="4070118.8821290">
+</boundingbox>
+<origin x="-20037508.3427890" y="-20037508.3427890"></origin>
+<tileformat extension="png" height="256" mime-type="image/png" width="256">
+</tileformat>
+<tilesets profile="global-mercator">
+  <tileset href="D:/WAdi/Tuilage/7" order="7" units-per-pixel="1222.9924526"></tileset>
+  <tileset href="D:/WAdi/Tuilage/8" order="8" units-per-pixel="611.4962263"></tileset>
+  <tileset href="D:/WAdi/Tuilage/9" order="9" units-per-pixel="305.7481131"></tileset>
+  <tileset href="D:/WAdi/Tuilage/10" order="10" units-per-pixel="152.8740566"></tileset>
+  <tileset href="D:/WAdi/Tuilage/11" order="11" units-per-pixel="76.4370283"></tileset>
+  <tileset href="D:/WAdi/Tuilage/12" order="12" units-per-pixel="38.2185141"></tileset>
+  <tileset href="D:/WAdi/Tuilage/13" order="13" units-per-pixel="19.1092571"></tileset>
+  <tileset href="D:/WAdi/Tuilage/14" order="14" units-per-pixel="9.5546285"></tileset>
+</tilesets>
+</tilemap>
